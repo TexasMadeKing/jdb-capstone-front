@@ -23,9 +23,11 @@ ReactDOM.render(
         audience={config.audience}
         onRedirectCallback={onRedirectCallback}
     >
+        <App />
     </Auth0Provider>,
-        <App />,
+    document.getElementById("root"),
     document.querySelector('.app-wrapper'));
+    
 
 
 serviceWorker.unregister();

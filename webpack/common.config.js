@@ -3,7 +3,7 @@ const SplitChunksPlugin = require('webpack/lib/optimize/SplitChunksPlugin');
 
 module.exports = {
   entry: {
-    app: ['./src/bootstrap.js'],
+    app: ['./src/index.js'],
     vendor: './src/vendor.js',
   },
 
@@ -40,7 +40,7 @@ module.exports = {
 
   plugins: [
     new SplitChunksPlugin({
-      name: ['app', 'vendor'],
+      name: ['App', 'vendor'],
       minChunks: Infinity,
     }),
   ],
