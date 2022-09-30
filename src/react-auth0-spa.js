@@ -9,7 +9,7 @@ export const useAuth0 = () => useContext(Auth0Context);
 export const Auth0Provider = ({
     children,
     onRedirectCallback = DEFAULT_REDIRECT_CALLBACK,
-    ...initOptions
+    initOptions
 }) => {
     const [isAuthenticated, setIsAuthenticated] = useState();
     const [user, setUser] = useState();
@@ -19,7 +19,7 @@ export const Auth0Provider = ({
 
     useEffect(() => {
         const initAuth0 = async () => {
-            const auth0FromHook = await createAuth0Client(initOptions);
+            const auth0FromHook = await createAuth0Client(...initOptions);
             setAuth0(auth0FromHook);
 
             if (window.location.search.includes("code=")) {
