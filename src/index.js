@@ -23,8 +23,8 @@ ReactDOM.render(
         audience={config.audience}
         onRedirectCallback={onRedirectCallback}
     >
-        <App />
     </Auth0Provider>,
+        <App />,
     document.querySelector('.app-wrapper'));
 
 
