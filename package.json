@@ -1,5 +1,5 @@
 {
-  "name": "react-redux-router",
+  "name": "jdb-capstone-frontend",
   "version": "1.0.0",
   "description": "Basic skeleton codebase for React/Redux/Router applications.",
   "scripts": {
@@ -30,7 +30,7 @@
   "bugs": {
     "url": "https://github.com/bottega-code-school/js-builder/issues"
   },
-  "homepage": "https://github.com/bottega-code-school/js-builder",
+  "homepage": "https://jdb-capstone-front.herokuapp.com/",
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.5.0",
     "ajv": "6.12.0",
