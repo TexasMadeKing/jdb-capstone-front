@@ -9,12 +9,12 @@ function TaskForm(props) {
     inputRef.current.focus();
   });
 
-  const handleChange = e => {
-    setInput(e.target.value);
+  const handleChange = event => {
+    setInput(event.target.value);
   };
 
-  const handleSubmit = e => {
-    e.preventDefault();
+  const handleSubmit = event => {
+    event.preventDefault();
     console.log(input);
 
     props.addTask(input);
