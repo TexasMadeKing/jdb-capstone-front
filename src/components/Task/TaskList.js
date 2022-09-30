@@ -11,7 +11,7 @@ const TaskList = (props) => {
     try {
         const token = await getTokenSilently();
 
-        const response = await axios.post("https://task-appt.herokuapp.com/", {
+        const response = await axios.post("https://task-appt.herokuapp.com/task", {
             title: text,
             description: 'description',
             isComplete: false

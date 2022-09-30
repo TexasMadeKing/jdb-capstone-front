@@ -13,7 +13,7 @@ const ExternalApi = () => {
         try {
             const token = await getTokenSilently();
 
-            const response = await axios.get("https://task-appt.herokuapp.com/", {
+            const response = await axios.get("https://task-appt.herokuapp.com/task", {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
