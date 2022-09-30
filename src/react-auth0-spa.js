@@ -9,7 +9,7 @@ export const useAuth0 = () => useContext(Auth0Context);
 export const Auth0Provider = ({
     children,
     onRedirectCallback = DEFAULT_REDIRECT_CALLBACK,
-    initOptions
+    ...initOptions
 }) => {
     const [isAuthenticated, setIsAuthenticated] = useState();
     const [user, setUser] = useState();
